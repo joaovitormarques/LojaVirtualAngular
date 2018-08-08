@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<nav *ngIf="mostrarMenu" >
+  <div class="nav-wrapper">
+    <a routerLink="" class="brand-logo right">Rump Up Ok</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      <li routerLinkActive="active"><a routerLink="/cursos" [queryParams]="{pagina:1}">Cursos</a></li>
+      <li routerLinkActive="active"><a routerLink="/alunos">Alunos</a></li>
+      <li routerLinkActive="active"><a routerLink="/loja">Loja</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav *ngIf="!mostrarMenu" >
+    <div class="nav-wrapper">
+      <a routerLink="" class="brand-logo right">Rump Up Falho</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+<!-- <div class="container">
+  <p>Entre com id do curso</p>
+  <input #idCurso>
+  <router-outlet></router-outlet>
+</div> -->
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+

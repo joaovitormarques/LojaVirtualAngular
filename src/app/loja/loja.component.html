@@ -1,0 +1,10 @@
+<div class="fixed-action-btn">
+<a (click)="resetNumeroDeItens()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+<span *ngIf="numeroDeItens > 0"  class="new badge red" data-badge-caption="">{{ numeroDeItens }}</span>
+</div>
+<div class="row">
+  <div *ngFor="let item of lista" class="col s4">
+      <app-produto ind={{item}} desc={{decricoes[item]}}></app-produto>
+  </div>
+</div>
+
