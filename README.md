@@ -1,6 +1,7 @@
-# Rotas
+# LojaVirtualAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+with Loiane's help: https://www.youtube.com/watch?v=tPOMG0D57S0&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G
 
 ## Development server
 
